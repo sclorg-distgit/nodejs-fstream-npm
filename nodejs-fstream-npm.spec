@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:       %{?scl_prefix}nodejs-fstream-npm
-Version:    1.1.0
-Release:    1%{?dist}
+Version:        1.2.0
+Release:        1%{?dist}
 Summary:    An fstream class for creating npm packages
 License:    ISC
 URL:        https://github.com/isaacs/fstream-npm
@@ -34,6 +34,9 @@ cp -pr fstream-npm.js package.json %{buildroot}%{nodejs_sitelib}/fstream-npm
 %doc README.md example LICENSE
 
 %changelog
+* Thu Jan 05 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.2.0-1
+- Updated with script
+
 * Wed Sep 07 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.1.0-1
 - Updated with script
 
